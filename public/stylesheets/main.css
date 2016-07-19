@@ -1,0 +1,73 @@
+.title {
+  display: inline-block;
+  margin: 20px auto 5px auto;
+  max-width: 400px;
+  text-align: center;
+  width: 100%; }
+
+h1 {
+  background: linear-gradient(to right, #571392 0%, #9e04bd 100%);
+  font-family: 'Secular One', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 40%; }
+
+.nav {
+  display: inline-block;
+  max-width: 400px;
+  width: 100%; }
+
+.nav__list {
+  margin: 0 auto;
+  padding: 10px 10px 10px 20px;
+  width: 160px; }
+
+.nav__link {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 10px; }
+  .nav__link a {
+    color: #000;
+    text-decoration: none; }
+
+.nav__link:first-child {
+  border-right: 2px solid #000; }
+
+.articles {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+
+.article__content {
+  height: 60px;
+  overflow: hidden;
+  border: 1px dashed #000;
+  position: relative; }
+
+.article__timestamp {
+  display: inline-block; }
+
+.footer__list {
+  margin: 40px auto 20px auto;
+  padding: 0;
+  text-align: center; }
+
+.footer__item {
+  display: inline-block;
+  margin: 0 10px; }
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 840px;
+  width: 100%; }

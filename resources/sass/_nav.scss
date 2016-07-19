@@ -1,0 +1,25 @@
+.nav {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+}
+
+.nav__list {
+    margin: 0 auto;
+    padding: 10px 10px 10px 20px;
+    width: 160px;
+}
+
+.nav__link {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 10px;
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+.nav__link:first-child {
+    border-right: 2px solid #000;
+}

@@ -1,0 +1,6 @@
+.articles
+    for article in data
+        h2.article__title #{ article.title }
+        .article
+            p.article__content #{ article.content }
+        span.article__timestamp #{ article.created }

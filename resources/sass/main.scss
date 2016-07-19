@@ -1,0 +1,17 @@
+@import '_header';
+@import '_nav';
+@import '_article';
+@import '_footer';
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 840px;
+    width: 100%;
+}

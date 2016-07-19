@@ -1,0 +1,20 @@
+.title {
+    display: inline-block;
+    margin: 20px auto 5px auto;
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    background: linear-gradient(to right, rgba(87,19,146,1) 0%, rgba(158,4,189,1) 100%);
+    font-family: 'Secular One', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    margin: 0 auto;
+    padding: 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 40%;
+}
