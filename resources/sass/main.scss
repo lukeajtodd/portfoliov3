@@ -2,6 +2,11 @@
 @import '_nav';
 @import '_article';
 @import '_footer';
+@import '_work';
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 
 body {
     font-size: 16px;
@@ -14,4 +19,20 @@ body {
     margin: 0 auto;
     max-width: 840px;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h2, p, span, a {
+    text-shadow: 2px 2px #eee;
 }

@@ -1,56 +1,67 @@
 .title {
-  display: inline-block;
+  display: block;
   margin: 20px auto 5px auto;
   max-width: 400px;
   text-align: center;
   width: 100%; }
+  .title a {
+    text-shadow: none; }
 
 h1 {
   background: linear-gradient(to right, #571392 0%, #9e04bd 100%);
   font-family: 'Secular One', cursive;
-  font-size: 3rem;
   font-weight: bold;
-  line-height: 2.4rem;
-  margin: 0 auto;
+  line-height: 2.8rem;
   padding: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 40%; }
+  width: 40%;
+  margin: 0 auto;
+  text-align: center; }
 
 .nav {
   display: inline-block;
   max-width: 400px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .nav__list {
   margin: 0 auto;
-  padding: 10px 10px 10px 20px;
-  width: 160px; }
+  padding: 10px 10px 10px 10px; }
 
 .nav__link {
   display: inline-block;
   font-size: 1.1rem;
-  padding: 10px; }
+  margin: 0 10px;
+  border-bottom: 2px solid transparent; }
   .nav__link a {
+    display: inline-block;
     color: #000;
-    text-decoration: none; }
-
-.nav__link:first-child {
-  border-right: 2px solid #000; }
+    text-decoration: none;
+    padding: 5px; }
+  .nav__link:hover {
+    border-bottom: 2px solid #ff9b03; }
 
 .articles {
   width: 80%;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center; }
 
 .article__content {
-  height: 60px;
+  height: 80px;
   overflow: hidden;
-  border: 1px dashed #000;
+  border-bottom: 1px dashed #000;
+  border-top: 1px dashed #000;
+  box-shadow: inset 0px -20px 40px -10px #eee;
+  padding: 10px;
   position: relative; }
 
 .article__timestamp {
   display: inline-block; }
+
+.footer {
+  max-width: 800px; }
 
 .footer__list {
   margin: 40px auto 20px auto;
@@ -60,6 +71,21 @@ h1 {
 .footer__item {
   display: inline-block;
   margin: 0 10px; }
+
+.work {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; }
+
+.work__screen {
+  box-shadow: 2px 2px 2px #eee;
+  transition: all 0.4s; }
+  .work__screen:hover {
+    box-shadow: 4px 4px 6px #bbb; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
 
 body {
   font-size: 16px;
@@ -71,3 +97,15 @@ body {
   margin: 0 auto;
   max-width: 840px;
   width: 100%; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h2, p, span, a {
+  text-shadow: 2px 2px #eee; }

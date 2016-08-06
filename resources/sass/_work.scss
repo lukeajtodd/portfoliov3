@@ -1,0 +1,14 @@
+.work {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work__screen {
+    box-shadow: 2px 2px 2px #eee;
+    transition: all 0.4s;
+    &:hover {
+        box-shadow: 4px 4px 6px #bbb;
+    }
+}

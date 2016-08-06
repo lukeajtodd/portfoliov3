@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    .container
+        include ./partials/header
+        include ./partials/nav
+        .work
+            for job in work
+                h2.work__header #{ job.title }
+                a(href="#{ job.url }")
+                    img.work__screen(src="#{ job.screengrab }")
+        include ./partials/footer
