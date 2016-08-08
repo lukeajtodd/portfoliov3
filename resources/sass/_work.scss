@@ -7,6 +7,38 @@
     zoom: 1;
 }
 
+.work-aside {
+    display: none;
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+        display: inline-block;
+        position: fixed;
+        background: $highlight_color;
+        height: 100%;
+        padding: 20px;
+        margin-top: 60px;
+        a, h2 {
+            text-shadow: none;
+        }
+        img {
+            box-shadow: none;
+        }
+
+        &__header {
+            text-align: left;
+        }
+
+        .work__container {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        .work__container {
+            width: 50%;
+        }
+    }
+}
+
 .work__container {
     @media screen and (min-width: 550px) {
         width: 50%;

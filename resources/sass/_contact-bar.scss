@@ -1,0 +1,17 @@
+.contact-bar {
+    display: none;
+    @media screen and (min-width: 1024px) {
+        display: block;
+        height: 60px;
+        background: #fefefe;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+        &__email {
+            float: right;
+            line-height: 60px;
+            padding-right: 30px;
+        }
+    }
+}

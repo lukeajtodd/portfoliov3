@@ -1,3 +1,19 @@
+.contact-bar {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .contact-bar {
+      display: block;
+      height: 60px;
+      background: #fefefe;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5; }
+      .contact-bar__email {
+        float: right;
+        line-height: 60px;
+        padding-right: 30px; } }
+
 .title {
   display: block;
   margin: 20px auto 5px auto;
@@ -7,7 +23,7 @@
   .title a {
     text-shadow: none; }
 
-h1 {
+.title__header {
   color: #9606b3;
   font-family: 'Secular One', cursive;
   font-weight: bold;
@@ -16,12 +32,18 @@ h1 {
   width: 40%;
   margin: 0 auto;
   text-align: center; }
+  @media screen and (min-width: 1024px) {
+    .title__header {
+      margin-bottom: 30px; } }
 
 .nav {
   display: inline-block;
   width: 100%;
   text-align: center;
   margin: 0 auto; }
+  @media screen and (min-width: 1024px) {
+    .nav {
+      display: none; } }
 
 .nav__list {
   padding: 10px 10px 10px 10px;
@@ -39,7 +61,7 @@ h1 {
     text-decoration: none;
     padding: 5px; }
   .nav__link:hover {
-    border-bottom: 2px solid #ec940f; }
+    border-bottom: 2px solid #ff7502; }
 
 .articles {
   width: 80%;
@@ -72,6 +94,9 @@ h1 {
     .article__content {
       width: 450px;
       margin: 30px auto; } }
+  @media screen and (min-width: 1024px) {
+    .article__content {
+      width: 100%; } }
 
 .article__timestamp {
   display: inline-block;
@@ -97,6 +122,29 @@ h1 {
   overflow: auto;
   zoom: 1; }
 
+.work-aside {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .work-aside {
+      width: 50%;
+      display: inline-block;
+      position: fixed;
+      background: #ff7502;
+      height: 100%;
+      padding: 20px;
+      margin-top: 60px; }
+      .work-aside a, .work-aside h2 {
+        text-shadow: none; }
+      .work-aside img {
+        box-shadow: none; }
+      .work-aside__header {
+        text-align: left; }
+      .work-aside .work__container {
+        width: 100%; } }
+  @media screen and (min-width: 1400px) {
+    .work-aside .work__container {
+      width: 50%; } }
+
 @media screen and (min-width: 550px) {
   .work__container {
     width: 50%;
@@ -117,7 +165,7 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ec940f;
+  background: #ff7502;
   color: #000;
   font-size: 2.2rem;
   box-shadow: 2px 2px 10px #333;
@@ -142,7 +190,7 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ec940f;
+  background: #ff7502;
   color: #000;
   font-size: 2.2rem;
   box-shadow: 2px 2px 10px #333;
@@ -164,12 +212,18 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: 'Work Sans', sans-serif;
+  background: #fefefe; }
 
 .container {
   margin: 0 auto;
   max-width: 840px;
   width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 50%;
+      display: inline-block;
+      margin-top: 60px; } }
 
 a {
   text-decoration: none; }

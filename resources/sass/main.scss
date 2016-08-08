@@ -1,6 +1,7 @@
 $main_color: rgba(150, 6, 179, 1);
-$highlight_color: #ec940f;
+$highlight_color: #ff7502;
 
+@import '_contact-bar';
 @import '_header';
 @import '_nav';
 @import '_article';
@@ -18,12 +19,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+
+    background: #fefefe;
 }
 
 .container {
     margin: 0 auto;
     max-width: 840px;
     width: 100%;
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+        display: inline-block;
+        margin-top: 60px;
+    }
 }
 
 a {

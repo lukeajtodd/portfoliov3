@@ -1,8 +1,14 @@
 extends layout
 
 block content
-    .container
-        include ./partials/header.jade
-        include ./partials/nav.jade
-        include ./partials/articles.jade
-        include ./partials/footer.jade
+    .articles-container
+        include ./partials/articles.jade  
+block work-aside      
+    .work-aside
+        .work
+            h2.work-aside__header WORK
+            for job in work
+                .work__container
+                    h2.work__header #{ job.title }
+                    a(href="#{ job.url }")
+                        img.work__screen(src="#{ job.screengrab }")
