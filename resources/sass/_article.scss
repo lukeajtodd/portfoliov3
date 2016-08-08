@@ -5,10 +5,6 @@
     text-align: center;
 }
 
-.articles-container {
-    
-}
-
 .article {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -35,7 +31,7 @@
     margin-bottom: 10px;
     @media screen and (min-width: 550px) {
         width: 450px;
-        margin: 30px auto;
+        margin: 5px auto 10px auto;
     }
     @media screen and (min-width: 1024px) {
         width: 100%;

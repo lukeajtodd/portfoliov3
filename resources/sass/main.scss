@@ -1,5 +1,5 @@
 $main_color: rgba(150, 6, 179, 1);
-$highlight_color: #ff7502;
+$highlight_color: #705499;
 
 @import '_contact-bar';
 @import '_header';
@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
     max-width: 840px;
     width: 100%;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1400px) {
         width: 50%;
         display: inline-block;
         margin-top: 60px;

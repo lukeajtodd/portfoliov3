@@ -21,7 +21,10 @@
     margin: 0 auto;
     text-align: center;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1400px) {
         margin-bottom: 30px;
+        font-size: 4rem;
+        line-height: 3.5rem;
+        width: 50%;
     }
 }

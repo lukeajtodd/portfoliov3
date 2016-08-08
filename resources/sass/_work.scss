@@ -9,13 +9,12 @@
 
 .work-aside {
     display: none;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1400px) {
         width: 50%;
         display: inline-block;
         position: fixed;
         background: $highlight_color;
         height: 100%;
-        padding: 20px;
         margin-top: 60px;
         a, h2 {
             text-shadow: none;
@@ -28,13 +27,53 @@
             text-align: left;
         }
 
-        .work__container {
+        .work {
             width: 100%;
         }
-    }
-    @media screen and (min-width: 1400px) {
+
         .work__container {
-            width: 50%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #333;
+                opacity: 0.5;
+            }
+        }
+
+        .job__title {
+            position: absolute;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            z-index: 6;
+        }
+
+        .job__description {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            padding: 10px;
+            color: #fff;
+            background: #333;
+            z-index: 6;
+            text-shadow: none;
+            text-align: left;
+            width: 45%;
+        }
+
+        .work__screen {
+            margin-bottom: -4px;
+            height: 250px;
+            width: 100%;
         }
     }
 }
