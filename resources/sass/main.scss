@@ -1,8 +1,13 @@
+$main_color: rgba(150, 6, 179, 1);
+$highlight_color: #ec940f;
+
 @import '_header';
 @import '_nav';
 @import '_article';
 @import '_footer';
 @import '_work';
+@import '_call_button';
+@import '_email_button';
 
 *, *::after, *::before {
     box-sizing: border-box;

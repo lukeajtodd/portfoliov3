@@ -12,13 +12,11 @@
 
 
 h1 {
-    background: linear-gradient(to right, rgba(87,19,146,1) 0%, rgba(158,4,189,1) 100%);
+    color: $main_color;
     font-family: 'Secular One', cursive;
     font-weight: bold;
     line-height: 2.8rem;
     padding: 10px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     width: 40%;
     margin: 0 auto;
     text-align: center;

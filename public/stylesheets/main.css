@@ -8,13 +8,11 @@
     text-shadow: none; }
 
 h1 {
-  background: linear-gradient(to right, #571392 0%, #9e04bd 100%);
+  color: #9606b3;
   font-family: 'Secular One', cursive;
   font-weight: bold;
   line-height: 2.8rem;
   padding: 10px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   width: 40%;
   margin: 0 auto;
   text-align: center; }
@@ -40,7 +38,7 @@ h1 {
     text-decoration: none;
     padding: 5px; }
   .nav__link:hover {
-    border-bottom: 2px solid #ff9b03; }
+    border-bottom: 2px solid #ec940f; }
 
 .articles {
   width: 80%;
@@ -83,6 +81,53 @@ h1 {
   transition: all 0.4s; }
   .work__screen:hover {
     box-shadow: 4px 4px 6px #bbb; }
+
+.call-action {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ec940f;
+  color: #000;
+  font-size: 2.2rem;
+  box-shadow: 2px 2px 10px #333;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  text-shadow: none;
+  -webkit-transform: rotateZ(35deg);
+      -ms-transform: rotate(35deg);
+          transform: rotateZ(35deg);
+  transition: all 0.4s; }
+  .call-action:hover {
+    bottom: 43px; }
+  @media screen and (min-width: 480px) {
+    .call-action {
+      display: none; } }
+
+.email-action {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ec940f;
+  color: #000;
+  font-size: 2.2rem;
+  box-shadow: 2px 2px 10px #333;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  text-shadow: none;
+  transition: all 0.4s; }
+  .email-action:hover {
+    bottom: 103px; }
+  @media screen and (min-width: 480px) {
+    .email-action {
+      display: none; } }
 
 *, *::after, *::before {
   box-sizing: border-box; }
