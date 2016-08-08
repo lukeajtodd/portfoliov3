@@ -5,8 +5,18 @@
     text-align: center;
 }
 
-.article__title {
+.article {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 
+.article__title {
+    margin-bottom: 10px;
+}
+
+.article__image {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .article__content {
@@ -17,8 +27,15 @@
     box-shadow: inset 0px -20px 40px -10px #eee;
     padding: 10px;
     position: relative;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 550px) {
+        width: 450px;
+        margin: 30px auto;
+    }
 }
 
 .article__timestamp {
     display: inline-block;
+    margin-top: 5px;
 }

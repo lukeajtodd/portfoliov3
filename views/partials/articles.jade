@@ -1,8 +1,8 @@
 .articles
     for article in articles
-        h2.article__title #{ article.title }
         .article
+            h2.article__title #{ article.title }
             if article.image
                 img.article__image(src="#{article.image}")
             p.article__content #{ article.content }
-        span.article__timestamp #{ article.created }
+            span.article__timestamp #{ article.created }
