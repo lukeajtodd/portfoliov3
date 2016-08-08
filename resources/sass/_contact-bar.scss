@@ -3,11 +3,12 @@
     @media screen and (min-width: 1400px) {
         display: block;
         height: 60px;
-        background: #fefefe;
+        background: #efefef;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 5;
+        border-top: 3px solid $main_color;
         &__email {
             float: right;
             line-height: 60px;

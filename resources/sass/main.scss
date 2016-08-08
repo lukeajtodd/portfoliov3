@@ -3,10 +3,10 @@ $highlight_color: #705499;
 
 @import '_contact-bar';
 @import '_header';
-@import '_nav';
 @import '_article';
 @import '_footer';
 @import '_work';
+@import '_about';
 @import '_call_button';
 @import '_email_button';
 
@@ -19,8 +19,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
-
-    background: #fefefe;
+    background: #efefef;
+    border-top: 3px solid $main_color;
 }
 
 .container {
@@ -31,6 +31,7 @@ body {
         width: 50%;
         display: inline-block;
         margin-top: 60px;
+        padding-top: 160px;
     }
 }
 
@@ -46,6 +47,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-h2, p, span, a {
-    text-shadow: 2px 2px #eee;
+h1, h2, p, span, a {
+    text-shadow: 2px 2px #ddd;
 }
