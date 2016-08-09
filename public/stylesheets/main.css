@@ -8,12 +8,15 @@
       position: fixed;
       top: 0;
       width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
       z-index: 5;
       border-top: 3px solid #9606b3; }
       .contact-bar__email {
         float: right;
         line-height: 60px;
-        padding-right: 30px; } }
+        padding-right: 30px;
+        color: #000; } }
 
 .title {
   display: block;
@@ -82,8 +85,9 @@
   margin-top: 5px; }
 
 .footer {
-  max-width: 800px;
-  margin-top: 30px; }
+  width: 100%;
+  margin-top: 30px;
+  margin: 0 auto; }
 
 .footer__list {
   margin: 40px auto 20px auto;
@@ -95,7 +99,6 @@
   margin: 0 10px; }
 
 .work {
-  width: 80%;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -115,10 +118,13 @@
   width: 100%; }
 
 .work-aside .work__container {
-  width: 100%;
-  margin: 0;
+  max-width: 800px;
   padding: 0;
-  position: relative; }
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .work-aside .work__container::after {
     content: "";
     position: absolute;
@@ -161,16 +167,9 @@
   .work-aside {
     width: 50%;
     display: inline-block;
-    position: fixed;
+    position: relative;
     height: 100%;
     margin-top: 60px; } }
-
-@media screen and (min-width: 550px) {
-  .work__container {
-    width: 50%;
-    display: inline-block; }
-    .work__container:last-child {
-      float: left; } }
 
 .work__screen {
   box-shadow: 2px 2px 2px #eee;
@@ -238,6 +237,39 @@
     .email-action {
       display: none; } }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@media screen and (min-width: 1400px) {
+  .fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1s;
+            animation: fadeIn ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .anim-delay-0 {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s; }
+  .anim-delay-1 {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; }
+  .anim-delay-2 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; } }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
@@ -248,14 +280,22 @@ body {
   font-family: 'Work Sans', sans-serif;
   background: #efefef;
   border-top: 3px solid #9606b3; }
+  @media screen and (min-width: 1400px) {
+    body {
+      overflow: hidden; } }
+
+.main {
+  margin: 0 auto;
+  max-width: 1600px; }
 
 .container {
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 800px;
   width: 100%; }
   @media screen and (min-width: 1400px) {
     .container {
       width: 50%;
+      float: left;
       display: inline-block;
       margin-top: 60px;
       padding-top: 160px; } }

@@ -6,9 +6,10 @@ block content
 block work-aside
     .work-aside
         .work
-            for job in work
+        - var n = 0
+            for job, index in work
                 a(href="#{ job.url }")
-                    .work__container
+                    div(class="work__container fade-in anim-delay-#{ n++ }")
                         h2.job__title #{ job.title }
                         p.job__description #{ job.description }
                         img.work__screen(src="#{ job.screengrab }")

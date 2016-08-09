@@ -7,12 +7,15 @@
         position: fixed;
         top: 0;
         width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
         z-index: 5;
         border-top: 3px solid $main_color;
         &__email {
             float: right;
             line-height: 60px;
             padding-right: 30px;
+            color: #000;
         }
     }
 }
