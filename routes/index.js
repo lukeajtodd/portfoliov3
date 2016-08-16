@@ -9,21 +9,21 @@ router.get('/', function(req, res, next) {
           ashadegreener: {
               title: 'A Shade Greener',
               url: 'https://www.ashadegreener.co.uk',
-              description: 'A money saving and deals website. I personally worked on the forms and multiple aspects of the UI.',
+              description: 'A money saving and deals website. Blade Templates, Foundation 6, Sass, jQuery, Laravel.',
               screengrab: '/images/ashadegreener.png',
               mobile_screengrab: '/images/ashadegreener-mobile.png'
           },
           getgovgrants: {
               title: 'Free Boiler Grants',
               url: 'https://www.getgovgrants.org.uk',
-              description: 'A website for free boiler grants. Front end custom built using the Foundation framework and the back-end using Laravel.',
+              description: 'A website for free boiler grants. Front-end built using Foundation 6 and the back-end using Laravel.',
               screengrab: '/images/getgovgrants.png',
               mobile_screengrab: '/images/getgovgrants-mobile.png'
           },
           quickquotes: {
               title: 'Quick Quotes Concept',
-              url: '',
-              description: 'This was the beginning of a site for window quotes. The app uses javascript and some jQuery sortable drag and drop effects.',
+              url: '#',
+              description: 'jQuery/Javascript app. Working on temporary hosting as the site was never finished.',
               screengrab: '/images/quickquotes.png',
               mobile_screengrab: ''
           }
