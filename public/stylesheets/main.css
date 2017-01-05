@@ -1,7 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik");
 .title {
-  padding-bottom: 30px;
-  border-bottom: dashed 3px #000; }
+  padding-bottom: 110px;
+  border-bottom: dashed 3px #000;
+  position: relative; }
+
+.logo-container {
+  position: absolute; }
+
+.logo-container:nth-child(4) {
+  padding-top: 20px; }
+
+.logo-container:nth-child(3) {
+  padding-top: 15px;
+  padding-left: 5px; }
+
+.logo-container:nth-child(2) {
+  padding-top: 10px;
+  padding-left: 10px; }
+
+.logo-container:nth-child(1) {
+  padding-top: 5px;
+  padding-left: 15px; }
 
 .footer {
   position: fixed;
@@ -29,14 +48,11 @@
 
 .work {
   position: relative;
-  margin: 30px 0; }
-  .work__title, .work__description {
-    width: 60%; }
+  margin: 45px 0; }
   .work__title {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
-    margin: 0;
-    margin-bottom: 30px; }
+    margin: 0; }
   .work__description {
     font-size: 1.2rem;
     font-weight: 600;
@@ -45,6 +61,9 @@
     width: 120%;
     margin-left: -10%;
     display: inline-block; }
+  .work__title, .work__description {
+    width: 60%;
+    margin-bottom: 30px; }
 
 *, *::after, *::before {
   box-sizing: border-box; }
