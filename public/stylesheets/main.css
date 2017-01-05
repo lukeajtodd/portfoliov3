@@ -34,21 +34,15 @@
     .nav__item a {
       color: #000;
       padding: 0 10px; }
+      .nav__item a object {
+        width: 1.5rem; }
       .nav__item a:hover {
         background: #000;
         color: #fff; }
-    .nav__item a.gh:hover {
-      background: #171515; }
-    .nav__item a.fb:hover {
-      background: #3b5998; }
-    .nav__item a.em:hover {
-      background: #333; }
-    .nav__item a.tw:hover {
-      background: #1da1f3; }
 
 .work {
   position: relative;
-  margin: 45px 0; }
+  margin: 5rem 0; }
   .work__title {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
