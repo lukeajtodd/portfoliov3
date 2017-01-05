@@ -1,4 +1,5 @@
-.work
-  h2.work__title TEMP TITLE
-  p.work__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore autem nesciunt, quisquam? Ipsam recusandae odio delectus assumenda, minus quo commodi, a aperiam illo earum fuga tenetur pariatur. Ipsa, assumenda, veniam.
-  // - img.work__image(src="http://www.fillmurray.com/300/300") 
+- for item in work
+  .work
+    h2.work__title= item.title
+    p.work__description= item.description
+    img.work__image(src="http://www.fillmurray.com/700/240") 
