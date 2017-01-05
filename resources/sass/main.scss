@@ -6,7 +6,7 @@ $highlight_color: #705499;
 // @import '_contact-bar';
 @import '_header';
 // @import '_article';
-@import '_footer';
+@import '_nav';
 @import '_work';
 // @import '_about';
 // @import '_call_button';
@@ -30,6 +30,12 @@ body {
     margin: 30px auto;
     max-width: 600px;
     width: 100%;
+}
+
+.separator {
+  border-bottom: dashed 3px #000;
+  margin: 30px auto;
+  width: 33%;
 }
 
 .hl {

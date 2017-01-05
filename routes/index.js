@@ -8,15 +8,15 @@ router.get('/', function(req, res, next) {
           preactImageGallery: {
               title: 'Preact Image Gallery',
               url: '#',
-              description: 'Image gallery for some of my photographs using Preact and the Imgur API.',
-              screengrab: 'http://www.fillmurray.com/240/240',
+              description: 'Photo gallery using Preact, the Imgur API and some lazy loading.',
+              screengrab: '/images/gallerysc.jpg',
               mobile_screengrab: '#'
           },
           getgovgrants: {
               title: 'Colour List Tool',
               url: '#',
               description: 'A React & Firebase tool to pick and save colour palettes.',
-              screengrab: 'https://www.fillmurray.com/240/240',
+              screengrab: 'https://www.fillmurray.com/700/240',
               mobile_screengrab: '#'
           }
       }
