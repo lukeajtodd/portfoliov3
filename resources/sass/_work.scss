@@ -1,87 +1,19 @@
 .work {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    overflow: auto;
-    zoom: 1;
-}
-
-.work-aside {
-    a, h2 {
-        text-shadow: none;
-    }
-    img {
-        box-shadow: none;
-    }
-
-    &__header {
-        text-align: left;
-    }
-    .work {
-        width: 100%;
-    }
-    .work__container {
-        max-width: 800px;
-        padding: 0;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #333;
-            opacity: 0.5;
-        }
-    }
-    .job__title {
-        position: absolute;
-        right: 20px;
-        background: #333;
-        color: #fff;
-        padding: 10px;
-        z-index: 6;
-    }
-
-    .job__description {
-        position: absolute;
-        left: 20px;
-        bottom: 20px;
-        padding: 10px;
-        color: #fff;
-        background: #333;
-        z-index: 6;
-        text-shadow: none;
-        text-align: left;
-        width: 45%;
-
-        @media screen and (max-width: 530px) {
-            width: 80%;
-        }
-    }
-
-    .work__screen {
-        margin-bottom: -4px;
-        height: 250px;
-        width: 100%;
-    }
-    @media screen and (min-width: 1400px) {
-        width: 50%;
-        display: inline-block;
-        position: relative;
-        height: 100%;
-        margin-top: 60px;
-    }
-}
-
-
-.work__screen {
-    box-shadow: 2px 2px 2px #eee;
-    transition: all 0.4s;
-    &:hover {
-        box-shadow: 4px 4px 6px #bbb;
-    }
+  margin: 30px 0;
+  &__title, &__description {
+    width: 60%;
+  }
+  &__title {
+    font-family: 'Eczar', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+  }
+  &__description {
+    font-size: 1.4rem;
+  }
+  &__image {
+    position: absolute;
+    display: inline-block;
+    float: right;
+  }
 }

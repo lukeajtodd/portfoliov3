@@ -1,15 +1,17 @@
 $main_color: rgba(150, 6, 179, 1);
 $highlight_color: #705499;
 
-@import '_contact-bar';
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
+
+// @import '_contact-bar';
 @import '_header';
-@import '_article';
+// @import '_article';
 @import '_footer';
 @import '_work';
-@import '_about';
-@import '_call_button';
-@import '_email_button';
-@import '_animations';
+// @import '_about';
+// @import '_call_button';
+// @import '_email_button';
+// @import '_animations';
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -19,44 +21,21 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Cormorant Garamond', sans-serif;
     background: #efefef;
-    border-top: 3px solid $main_color;
-    @media screen and (min-width: 1400px) {
-        overflow: hidden;    
-    }
-}
-
-.main {
-    margin: 0 auto;
-    max-width: 1600px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 800px;
+    position: relative;
+    margin: 30px auto;
+    max-width: 600px;
     width: 100%;
-    @media screen and (min-width: 1400px) {
-        width: 50%;
-        float: left;
-        display: inline-block;
-        margin-top: 60px;
-        padding-top: 160px;
-    }
+}
+
+.hl {
+  background: #ffff00;
 }
 
 a {
     text-decoration: none;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-h1, h2, p, span, a {
-    text-shadow: 2px 2px #ddd;
 }

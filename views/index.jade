@@ -1,15 +1,8 @@
 extends layout
 
 block content
+    include ./partials/work.jade
+    include ./partials/work.jade
+    include ./partials/work.jade
     .about-container
-        include ./partials/about.jade  
-block work-aside
-    .work-aside
-        .work
-        - var n = 0
-            for job, index in work
-                a(href="#{ job.url }")
-                    div(class="work__container fade-in anim-delay-#{ n++ }")
-                        h2.job__title #{ job.title }
-                        p.job__description #{ job.description }
-                        img.work__screen(src="#{ job.screengrab }")
+        include ./partials/about.jade

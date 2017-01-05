@@ -1,8 +1,0 @@
-.articles
-    for article in articles
-        .article
-            h2.article__title #{ article.title }
-            if article.image
-                img.article__image(src="#{article.image}")
-            p.article__content #{ article.content }
-            span.article__timestamp #{ article.created }
