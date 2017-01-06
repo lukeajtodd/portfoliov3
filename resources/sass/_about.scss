@@ -1,4 +1,4 @@
-.work {
+.about {
   background: #ddd;
   border: 3px solid black;
   width: 26rem;
@@ -7,32 +7,28 @@
   margin-left: 10px;
   margin-top: 10px;
   position: relative;
-  overflow: hidden;
   float: left;
 
-  &__title {
-    position: relative;
+  &__header, &__content {
+    width: 70%;
+  }
+
+  &__header {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     margin: 0;
-    z-index: 99;
   }
-  &__description {
-    position: relative;
-    float: right;
-    width: 70%;
-    text-align: right;
+
+  &__content {
+    font-family: 'Eczar', sans-serif;
     font-size: 1.2rem;
-    font-weight: 600;
     line-height: 1.8rem;
-    z-index: 99;
   }
-  &__image {
+
+  &__face {
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 190%;
-    display: inline-block;
-    z-index: 1;
+    top: 2rem;
+    right: 2rem;
   }
 }

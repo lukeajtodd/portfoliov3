@@ -8,7 +8,7 @@ $highlight_color: #705499;
 // @import '_article';
 @import '_nav';
 @import '_work';
-// @import '_about';
+@import '_about';
 // @import '_call_button';
 // @import '_email_button';
 // @import '_animations';
@@ -28,18 +28,29 @@ body {
 .container {
     position: relative;
     margin: 30px auto;
-    max-width: 600px;
+    padding: 30px;
+    max-width: 1100px;
     width: 100%;
 }
 
-.separator {
-  border-bottom: dashed 3px #000;
-  margin: 30px auto;
-  width: 33%;
+.inner-container {
+  max-width: 60rem;
+  width: 100%;
+  padding: 30px 30px 60px 30px;
+  margin: 0 auto;
+  &:after {
+    content: "";
+  display: table;
+  clear: both;
+  }
 }
 
 .hl {
   background: #ffff00;
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
 }
 
 a {

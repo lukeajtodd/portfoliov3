@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik");
 .title {
   padding-bottom: 110px;
-  border-bottom: dashed 3px #000;
   position: relative; }
 
 .logo-container {
@@ -23,42 +22,79 @@
   padding-left: 15px; }
 
 .nav {
-  position: absolute;
-  right: 0;
-  bottom: 0; }
+  text-align: center; }
   .nav__list {
-    list-style: none; }
+    list-style: none;
+    padding: 0;
+    margin: 0; }
   .nav__item {
     font-size: 1.3rem;
     display: inline-block; }
     .nav__item a {
       color: #000;
       padding: 0 10px; }
-      .nav__item a object {
+      .nav__item a img {
         width: 1.5rem; }
-      .nav__item a:hover {
-        background: #000;
-        color: #fff; }
 
 .work {
+  background: #ddd;
+  border: 3px solid black;
+  width: 26rem;
+  height: 16rem;
+  padding: 2rem;
+  margin-left: 10px;
+  margin-top: 10px;
   position: relative;
-  margin: 5rem 0; }
+  overflow: hidden;
+  float: left; }
   .work__title {
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    z-index: 99; }
+  .work__description {
+    position: relative;
+    float: right;
+    width: 70%;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    z-index: 99; }
+  .work__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190%;
+    display: inline-block;
+    z-index: 1; }
+
+.about {
+  background: #ddd;
+  border: 3px solid black;
+  width: 26rem;
+  height: 16rem;
+  padding: 2rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: relative;
+  float: left; }
+  .about__header, .about__content {
+    width: 70%; }
+  .about__header {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     margin: 0; }
-  .work__description {
+  .about__content {
+    font-family: 'Eczar', sans-serif;
     font-size: 1.2rem;
-    font-weight: 600;
     line-height: 1.8rem; }
-  .work__image {
-    border: 3px solid #000;
-    width: 140%;
-    margin-left: -20%;
-    display: inline-block; }
-  .work__title, .work__description {
-    width: 60%;
-    margin-bottom: 30px; }
+  .about__face {
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem; }
 
 *, *::after, *::before {
   box-sizing: border-box; }
@@ -73,16 +109,25 @@ body {
 .container {
   position: relative;
   margin: 30px auto;
-  max-width: 600px;
+  padding: 30px;
+  max-width: 1100px;
   width: 100%; }
 
-.separator {
-  border-bottom: dashed 3px #000;
-  margin: 30px auto;
-  width: 33%; }
+.inner-container {
+  max-width: 60rem;
+  width: 100%;
+  padding: 30px 30px 60px 30px;
+  margin: 0 auto; }
+  .inner-container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .hl {
   background: #ffff00; }
+  .hl:hover {
+    background: #000;
+    color: #fff; }
 
 a {
   text-decoration: none; }
