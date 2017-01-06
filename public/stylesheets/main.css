@@ -47,6 +47,10 @@
   position: relative;
   overflow: hidden;
   float: left; }
+  .work__title, .work__description {
+    display: none; }
+  .work:hover .work__title, .work:hover .work__description {
+    display: inline-block; }
   .work__title {
     position: relative;
     font-family: 'Rubik', sans-serif;

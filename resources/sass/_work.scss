@@ -10,6 +10,16 @@
   overflow: hidden;
   float: left;
 
+  &__title, &__description {
+    display: none;
+  }
+
+  &:hover {
+    .work__title, .work__description {
+      display: inline-block;
+    }
+  }
+
   &__title {
     position: relative;
     font-family: 'Rubik', sans-serif;
