@@ -77,7 +77,7 @@
 .about {
   background: #ddd;
   border: 3px solid black;
-  width: 26rem;
+  width: calc(52rem + 10px);
   height: 16rem;
   padding: 2rem;
   margin-left: 10px;
