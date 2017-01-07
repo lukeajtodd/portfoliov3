@@ -1,28 +1,38 @@
 .contact {
-  max-width: 1000px;
+  max-width: calc(52rem + 10px);
   width: 100%;
-  padding: 30px 0 60px 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
 
-  .details__container, .form__container {
+  .details__container, .message__container {
     position: relative;
     background: #ddd;
     border: 3px solid #000;
-    padding: 30px;
     height: 20rem;
     width: 50%;
     display: inline-block;
   }
 
-  .form__container {
+  .details__container {
     float: right;
     border-left: none;
   }
 
-  .details, .form {
+
+  .details, .message {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .message {
+    p {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      font-size: 4rem;
+    }
   }
 
   .details {
@@ -32,17 +42,11 @@
     }
 
     h2 {
+      margin: 0;
       font-size: 2rem;
-    }
-  }
-
-  .form {
-    &__label {
-      font-size: 1.3rem;
-      display: block;
-
-      input {
-        margin-left: 30px;
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

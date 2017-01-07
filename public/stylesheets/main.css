@@ -1,37 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik");
 .contact {
-  max-width: 1000px;
+  max-width: calc(52rem + 10px);
   width: 100%;
-  padding: 30px 0 60px 0; }
-  .contact .details__container, .contact .form__container {
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left; }
+  .contact .details__container, .contact .message__container {
     position: relative;
     background: #ddd;
     border: 3px solid #000;
-    padding: 30px;
     height: 20rem;
     width: 50%;
     display: inline-block; }
-  .contact .form__container {
+  .contact .details__container {
     float: right;
     border-left: none; }
-  .contact .details, .contact .form {
+  .contact .details, .contact .message {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+  .contact .message p {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem; }
   .contact .details {
     text-align: right; }
     .contact .details a {
       color: #000; }
     .contact .details h2 {
-      font-size: 2rem; }
-  .contact .form__label {
-    font-size: 1.3rem;
-    display: block; }
-    .contact .form__label input {
-      margin-left: 30px; }
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 500; }
+      .contact .details h2:hover {
+        text-decoration: underline; }
 
 .title {
   padding-bottom: 110px;
