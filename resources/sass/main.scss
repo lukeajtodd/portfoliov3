@@ -3,7 +3,7 @@ $highlight_color: #705499;
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
 
-// @import '_contact-bar';
+@import '_contact';
 @import '_header';
 // @import '_article';
 @import '_nav';
@@ -43,6 +43,18 @@ body {
   display: table;
   clear: both;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  opacity: 0.75;
+  z-index: 10;
+  display: none;
 }
 
 .hl {
