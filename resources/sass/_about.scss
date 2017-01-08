@@ -6,7 +6,6 @@
   height: $main_height;
   padding: $padding;
   margin: 60px auto;
-  margin-left: $margin;
   margin-top: $margin;
   position: relative;
 
@@ -37,7 +36,8 @@
   &__face {
     border-radius: 50%;
     position: absolute;
-    top: 2rem;
+    top: 50%;
     right: 2rem;
+    transform: translateY(-50%);
   }
 }

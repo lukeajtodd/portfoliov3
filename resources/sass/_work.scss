@@ -1,6 +1,6 @@
 .work__container {
   width: 100%;
-  max-width: 100%;
+  max-width: $main_width;
   margin: 60px auto;
   &:after {
     content: "";
@@ -12,7 +12,7 @@
 .work {
   background: #ddd;
   border: 3px solid black;
-  max-width: 31rem;
+  max-width: 29rem;
   width: 100%;
   height: $main_height;
   padding: $padding;
@@ -21,6 +21,10 @@
   position: relative;
   overflow: hidden;
   float: left;
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   &__title, &__description {
     display: none;
@@ -54,7 +58,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 190%;
+    width: 200%;
     display: inline-block;
     z-index: 1;
   }

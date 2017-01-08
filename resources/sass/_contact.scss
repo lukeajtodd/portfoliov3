@@ -1,4 +1,6 @@
 .contact {
+  width: $main_width;
+  margin: 0 auto;
   margin-top: 60px;
   &:after {
     content: "";
@@ -10,11 +12,14 @@
     background: #ddd;
     border: 3px solid #000;
     height: 20rem;
-    max-width: 31rem;
+    max-width: 29rem;
     width: 100%;
-    margin-left: $margin;
     margin-top: $margin;
     float: left;
+  }
+
+  .details__container {
+    margin-left: $margin;
   }
 
 

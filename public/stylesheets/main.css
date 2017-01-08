@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik");
 .contact {
+  width: calc(58rem + 15px);
+  margin: 0 auto;
   margin-top: 60px; }
   .contact:after {
     content: "";
@@ -10,11 +12,12 @@
     background: #ddd;
     border: 3px solid #000;
     height: 20rem;
-    max-width: 31rem;
+    max-width: 29rem;
     width: 100%;
-    margin-left: 15px;
     margin-top: 15px;
     float: left; }
+  .contact .details__container {
+    margin-left: 15px; }
   .contact .details, .contact .message {
     position: absolute;
     top: 50%;
@@ -84,7 +87,7 @@
 
 .work__container {
   width: 100%;
-  max-width: 100%;
+  max-width: calc(58rem + 15px);
   margin: 60px auto; }
   .work__container:after {
     content: "";
@@ -94,7 +97,7 @@
 .work {
   background: #ddd;
   border: 3px solid black;
-  max-width: 31rem;
+  max-width: 29rem;
   width: 100%;
   height: 20rem;
   padding: 3rem;
@@ -103,6 +106,8 @@
   position: relative;
   overflow: hidden;
   float: left; }
+  .work:first-child {
+    margin-left: 0; }
   .work__title, .work__description {
     display: none; }
   .work:hover .work__title, .work:hover .work__description {
@@ -112,7 +117,7 @@
   .work__title {
     position: relative;
     font-family: 'Rubik', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     margin: 0;
     z-index: 99; }
   .work__description {
@@ -126,19 +131,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 190%;
+    width: 200%;
     display: inline-block;
     z-index: 1; }
 
 .about {
   background: #ddd;
   border: 3px solid black;
-  max-width: calc(62rem + 15px);
+  max-width: calc(58rem + 15px);
   width: 100%;
   height: 20rem;
   padding: 3rem;
   margin: 60px auto;
-  margin-left: 15px;
   margin-top: 15px;
   position: relative; }
   .about a {
@@ -150,7 +154,7 @@
     width: 70%; }
   .about__header {
     font-family: 'Rubik', sans-serif;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0; }
   .about__content {
     font-family: 'Eczar', sans-serif;
@@ -159,8 +163,11 @@
   .about__face {
     border-radius: 50%;
     position: absolute;
-    top: 2rem;
-    right: 2rem; }
+    top: 50%;
+    right: 2rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 *, *::after, *::before {
   box-sizing: border-box; }
