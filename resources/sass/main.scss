@@ -1,9 +1,12 @@
 $main_color: rgba(150, 6, 179, 1);
 $highlight_color: #705499;
-$padding: 30px;
+$padding: 3rem;
 $margin: 15px;
-$main_width: calc(52rem + 15px);
-$main_height: 16rem;
+$main_width: calc(62rem + 15px);
+$main_height: 20rem;
+$header_font_size: 3rem;
+$content_font_size: 1.6rem;
+$line_height: 2rem;
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
 
@@ -33,12 +36,12 @@ body {
     position: relative;
     margin: 30px auto;
     padding: 30px;
-    max-width: 1100px;
+    max-width: 1400px;
     width: 100%;
 }
 
 .inner-container {
-  max-width: 60rem;
+  max-width: 1100px;
   width: 100%;
   padding: 30px 30px 60px 30px;
   margin: 0 auto;

@@ -12,7 +12,8 @@
 .work {
   background: #ddd;
   border: 3px solid black;
-  width: 26rem;
+  max-width: 31rem;
+  width: 100%;
   height: $main_height;
   padding: $padding;
   margin-left: $margin;
@@ -37,16 +38,16 @@
   &__title {
     position: relative;
     font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
+    font-size: $header_font_size - 0.5rem;
     margin: 0;
     z-index: 99;
   }
   &__description {
     position: relative;
     width: 70%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.8rem;
+    font-size: $content_font_size;
+    font-weight: 500;
+    line-height: $line_height;
     z-index: 99;
   }
   &__image {
