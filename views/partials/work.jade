@@ -1,6 +1,7 @@
-- for item in work
-  .work
-    .overlay
-    h2.work__title= item.title
-    p.work__description= item.description
-    img.work__image(src="#{item.screengrab}") 
+.work__container
+    - for item in work
+      .work
+        .overlay
+        h2.work__title= item.title
+        p.work__description= item.description
+        img.work__image(src="#{item.screengrab}") 

@@ -1,13 +1,14 @@
 .about {
   background: #ddd;
   border: 3px solid black;
-  width: calc(52rem + 10px);
-  height: 16rem;
+  max-width: $main_width;
+  width: 100%;
+  height: $main_height;
   padding: 2rem;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 60px auto;
+  margin-left: $margin;
+  margin-top: $margin;
   position: relative;
-  float: left;
 
   &__header, &__content {
     width: 70%;

@@ -1,5 +1,9 @@
 $main_color: rgba(150, 6, 179, 1);
 $highlight_color: #705499;
+$padding: 30px;
+$margin: 15px;
+$main_width: calc(52rem + 15px);
+$main_height: 16rem;
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
 
@@ -55,6 +59,14 @@ body {
   opacity: 0.75;
   z-index: 10;
   display: none;
+}
+
+.separator {
+  width: 120%;
+  border-bottom: 2px solid #000;
+  margin-left: -10%;
+  margin-top: $margin * 2;
+  margin-bottom: $margin;
 }
 
 .hl {

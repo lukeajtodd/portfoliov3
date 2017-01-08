@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik");
 .contact {
-  max-width: calc(52rem + 10px);
-  width: 100%;
-  margin-left: 10px;
-  margin-top: 10px;
-  float: left; }
+  margin-top: 60px; }
+  .contact:after {
+    content: "";
+    display: table;
+    clear: both; }
   .contact .details__container, .contact .message__container {
     position: relative;
     background: #ddd;
     border: 3px solid #000;
     height: 20rem;
-    width: 50%;
-    display: inline-block; }
-  .contact .details__container {
-    float: right;
-    border-left: none; }
+    width: 26rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left; }
   .contact .details, .contact .message {
     position: absolute;
     top: 50%;
@@ -74,21 +73,30 @@
       .nav__item a img {
         width: 1.5rem; }
 
+.work__container {
+  width: 100%;
+  max-width: 100%;
+  margin: 60px auto; }
+  .work__container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .work {
   background: #ddd;
   border: 3px solid black;
   width: 26rem;
   height: 16rem;
-  padding: 2rem;
-  margin-left: 10px;
-  margin-top: 10px;
+  padding: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
   position: relative;
   overflow: hidden;
   float: left; }
   .work__title, .work__description {
     display: none; }
   .work:hover .work__title, .work:hover .work__description {
-    display: inline-block; }
+    display: block; }
   .work:hover .overlay {
     display: block; }
   .work__title {
@@ -115,13 +123,14 @@
 .about {
   background: #ddd;
   border: 3px solid black;
-  width: calc(52rem + 10px);
+  max-width: calc(52rem + 15px);
+  width: 100%;
   height: 16rem;
   padding: 2rem;
-  margin-left: 10px;
-  margin-top: 10px;
-  position: relative;
-  float: left; }
+  margin: 60px auto;
+  margin-left: 15px;
+  margin-top: 15px;
+  position: relative; }
   .about__header, .about__content {
     width: 70%; }
   .about__header {
@@ -175,6 +184,13 @@ body {
   opacity: 0.75;
   z-index: 10;
   display: none; }
+
+.separator {
+  width: 120%;
+  border-bottom: 2px solid #000;
+  margin-left: -10%;
+  margin-top: 30px;
+  margin-bottom: 15px; }
 
 .hl {
   background: #ffff00; }

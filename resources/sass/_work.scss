@@ -1,11 +1,22 @@
+.work__container {
+  width: 100%;
+  max-width: 100%;
+  margin: 60px auto;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .work {
   background: #ddd;
   border: 3px solid black;
   width: 26rem;
-  height: 16rem;
-  padding: 2rem;
-  margin-left: 10px;
-  margin-top: 10px;
+  height: $main_height;
+  padding: $padding;
+  margin-left: $margin;
+  margin-top: $margin;
   position: relative;
   overflow: hidden;
   float: left;
@@ -16,7 +27,7 @@
 
   &:hover {
     .work__title, .work__description {
-      display: inline-block;
+      display: block;
     }
     .overlay {
       display: block;
