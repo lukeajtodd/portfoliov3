@@ -78,8 +78,6 @@
   padding-top: 5px;
   padding-left: 8px;
   will-change: padding-top; }
-  .logo-container:nth-child(1) .logo {
-    fill: #9E9E9E; }
 
 @-webkit-keyframes flow2 {
   0% {
@@ -101,8 +99,6 @@
   padding-top: 10px;
   padding-left: 16px;
   will-change: padding-top; }
-  .logo-container:nth-child(2) .logo {
-    fill: #FF9800; }
 
 @-webkit-keyframes flow3 {
   0% {
@@ -124,8 +120,6 @@
   padding-top: 15px;
   padding-left: 24px;
   will-change: padding-top; }
-  .logo-container:nth-child(3) .logo {
-    fill: #FF5722; }
 
 @-webkit-keyframes flow4 {
   0% {
@@ -147,11 +141,6 @@
   padding-top: 20px;
   padding-left: 32px;
   will-change: padding-top; }
-  .logo-container:nth-child(4) .logo {
-    fill: #009688; }
-
-.logo-container:nth-child(4) .logo {
-  fill: #000; }
 
 .logo-container:nth-child(1) {
   -webkit-animation: flow1 1.4s 1.1s ease-in-out infinite;

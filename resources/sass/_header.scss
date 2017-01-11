@@ -23,28 +23,6 @@ $animation2: flow2 1.4s 1.2s ease-in-out infinite;
 $animation3: flow3 1.4s 1.3s ease-in-out infinite;
 $animation4: flow4 1.4s 1.4s ease-in-out infinite;
 
-$colours: (
-  #F44336,
-  #E91E63,
-  #9C27B0,
-  #673AB7,
-  #3F51B5,
-  #2196F3,
-  #03A9F4,
-  #00BCD4,
-  #009688,
-  #4CAF50,
-  #8BC34A,
-  #CDDC39,
-  #FFEB3B,
-  #FFC107,
-  #FF9800,
-  #FF5722,
-  #795548,
-  #9E9E9E,
-  #607D8B
-);
-
 @for $i from 1 through 4 {
 
   @keyframes flow#{$i} {
@@ -60,18 +38,9 @@ $colours: (
   }
 
   .logo-container:nth-child(#{$i}) {
-    .logo {
-      fill: nth($colours, random(19 - 1));
-    }
     padding-top: #{$i * 5}px;
     padding-left: #{$i * 8}px;
     will-change: padding-top;
-  }
-}
-
-.logo-container:nth-child(4) {
-  .logo {
-    fill: #000;
   }
 }
 
