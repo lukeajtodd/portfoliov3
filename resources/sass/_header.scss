@@ -7,7 +7,9 @@
 .logo-box {
   left: 50%;
   position: absolute;
-  transform: translateX(-50%);
+  .logo-container {
+    transform: translateX(-50%);
+  }
 }
 
 .logo {
@@ -39,7 +41,7 @@ $animation4: flow4 1.4s 1.4s ease-in-out infinite;
 
   .logo-container:nth-child(#{$i}) {
     padding-top: #{$i * 5}px;
-    padding-left: #{$i * 8}px;
+    padding-left: #{$i * 11}px;
     will-change: padding-top;
   }
 }

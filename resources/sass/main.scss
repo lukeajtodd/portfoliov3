@@ -8,6 +8,12 @@ $header_font_size: 2.2rem;
 $content_font_size: 1.4rem;
 $line_height: 2.4rem;
 
+@media screen and (max-width: 800px) {
+  $header_font_size: 2.4rem;
+  $content_font_size: 1.1rem;
+  $line_height: 2rem;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
 
 @import '_contact';

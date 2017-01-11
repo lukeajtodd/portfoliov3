@@ -22,20 +22,25 @@
   overflow: hidden;
   float: left;
 
+  @media screen and (max-width: 800px) {
+    height: 100%;
+  }
+
   &:first-child {
     margin-left: 0;
   }
 
-  &__title, &__description {
-    display: none;
-  }
-
-  &:hover {
-    .work__title, .work__description {
-      display: block;
+  @media screen and (min-width: 800px) {
+    &__title, &__description {
+      display: none;
     }
-    .overlay {
-      display: block;
+    &:hover {
+      .work__title, .work__description {
+        display: block;
+      }
+      .overlay {
+        display: block;
+      }
     }
   }
 
@@ -61,5 +66,23 @@
     width: 200%;
     display: inline-block;
     z-index: 1;
+  }
+
+  @media screen and (max-width: 800px) {
+    &__title, &__description, .overlay {
+      display: block;
+    }
+    &__image {
+      width: 400%;
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .work {
+    float: none;
+    max-width: $main_width;
+    width: 100%;
+    margin-left: 0;
   }
 }
