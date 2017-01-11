@@ -4,20 +4,46 @@
   position: relative;
 }
 
-.logo {
+.logo-box {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
+}
+
+.logo {
+  width: 80px;
 }
 
 .logo-container {
   position: absolute;
 }
 
-$animation1: flow1 1.4s 1.1s ease-in-out 5;
-$animation2: flow2 1.4s 1.2s ease-in-out 5;
-$animation3: flow3 1.4s 1.3s ease-in-out 5;
-$animation4: flow4 1.4s 1.4s ease-in-out 5;
+$animation1: flow1 1.4s 1.1s ease-in-out infinite;
+$animation2: flow2 1.4s 1.2s ease-in-out infinite;
+$animation3: flow3 1.4s 1.3s ease-in-out infinite;
+$animation4: flow4 1.4s 1.4s ease-in-out infinite;
+
+$colours: (
+  #F44336,
+  #E91E63,
+  #9C27B0,
+  #673AB7,
+  #3F51B5,
+  #2196F3,
+  #03A9F4,
+  #00BCD4,
+  #009688,
+  #4CAF50,
+  #8BC34A,
+  #CDDC39,
+  #FFEB3B,
+  #FFC107,
+  #FF9800,
+  #FF5722,
+  #795548,
+  #9E9E9E,
+  #607D8B
+);
 
 @for $i from 1 through 4 {
 
@@ -26,7 +52,7 @@ $animation4: flow4 1.4s 1.4s ease-in-out 5;
       padding-top: #{$i * 5}px;
     }
     50% {
-      padding-top: #{($i * 5) * 1.4}px;
+      padding-top: #{($i * 5) * 1.2}px;
     }
     110% {
       padding-top: #{$i * 5}px;
@@ -34,9 +60,18 @@ $animation4: flow4 1.4s 1.4s ease-in-out 5;
   }
 
   .logo-container:nth-child(#{$i}) {
+    .logo {
+      fill: nth($colours, random(19 - 1));
+    }
     padding-top: #{$i * 5}px;
     padding-left: #{$i * 8}px;
     will-change: padding-top;
+  }
+}
+
+.logo-container:nth-child(4) {
+  .logo {
+    fill: #000;
   }
 }
 
