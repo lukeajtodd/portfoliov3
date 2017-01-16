@@ -8,12 +8,6 @@ $header_font_size: 2.2rem;
 $content_font_size: 1.4rem;
 $line_height: 2.4rem;
 
-@media screen and (max-width: 800px) {
-  $header_font_size: 2.4rem;
-  $content_font_size: 1.1rem;
-  $line_height: 2rem;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
 
 @import '_contact';
@@ -41,7 +35,7 @@ body {
 .container {
     position: relative;
     margin: 30px auto;
-    padding: 30px;
+    padding: 5%;
     max-width: 1400px;
     width: 100%;
 }
@@ -49,12 +43,17 @@ body {
 .inner-container {
   max-width: 1100px;
   width: 100%;
-  padding: 30px 30px 60px 30px;
+  padding: 30px 5% 60px 5%;
   margin: 0 auto;
   &:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 
