@@ -13,7 +13,7 @@
     background: #ddd;
     border: 3px solid #000;
     height: 20rem;
-    max-width: 29rem;
+    max-width: 49%;
     width: 100%;
     margin-top: 15px;
     float: left; }
@@ -46,12 +46,16 @@
   @media screen and (max-width: 1070px) {
     .contact .details__container, .contact .message__container {
       float: none;
-      max-width: calc(58rem + 15px);
+      max-width: 100%;
       width: 100%;
       margin-left: 0; }
     .contact .message {
       text-align: center;
       width: 70%; } }
+
+@media screen and (max-width: 340px) {
+  .contact .details a {
+    font-size: 1.6rem; } }
 
 .title {
   padding-left: 3rem;
@@ -202,7 +206,8 @@
 .work {
   background: #ddd;
   border: 3px solid black;
-  max-width: 29rem;
+  color: #fff;
+  max-width: 49%;
   width: 100%;
   height: 20rem;
   padding: 3rem;
@@ -214,7 +219,7 @@
   @media screen and (max-width: 800px) {
     .work {
       height: 100%; } }
-  .work:first-child {
+  .work:nth-child(odd) {
     margin-left: 0; }
   @media screen and (min-width: 800px) {
     .work__title, .work__description {
@@ -240,14 +245,44 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%;
     display: inline-block;
-    z-index: 1; }
+    height: 100%;
+    width: 100%; }
+  .work .WIP:after {
+    content: "WIP";
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    background: black;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100; }
+  .work .imagegal {
+    background-image: url(/images/gallerysc.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 1%; }
+  .work .colorlist {
+    background-image: url(/images/colorlisttool.png);
+    background-repeat: no-repeat;
+    background-size: 210%;
+    background-position: 1%; }
+  .work .juniordays {
+    background-image: url(/images/juniordayssnip.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: 10%; }
+  .work .baseon {
+    background-image: url(/images/bloggersnip.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 5%; }
   @media screen and (max-width: 800px) {
     .work__title, .work__description, .work .overlay {
       display: block; }
     .work__image {
-      width: 400%; } }
+      width: 100%; } }
 
 @media screen and (max-width: 1070px) {
   .work {
@@ -255,6 +290,12 @@
     max-width: calc(58rem + 15px);
     width: 100%;
     margin-left: 0; } }
+
+@media screen and (max-width: 340px) {
+  .work {
+    padding: 2.5rem; }
+    .work__description {
+      width: 100%; } }
 
 .about {
   background: #ddd;
@@ -301,6 +342,10 @@
       .about__face {
         display: none; } }
 
+@media screen and (max-width: 340px) {
+  .about {
+    padding: 2.5rem; } }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
@@ -338,17 +383,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #eee;
+  background: #000;
   opacity: 0.75;
   z-index: 10;
   display: none; }
-
-.separator {
-  width: 120%;
-  border-bottom: 2px solid #000;
-  margin-left: -10%;
-  margin-top: 30px;
-  margin-bottom: 15px; }
 
 .hl {
   background: #ffff00; }

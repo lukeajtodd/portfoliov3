@@ -9,13 +9,29 @@ router.get('/', function(req, res, next) {
               title: 'Preact Image Gallery',
               url: '#',
               description: 'Photo gallery using Preact, the Imgur API and some lazy loading.',
-              screengrab: '/images/gallerysc.jpg'
+              screengrab: '/images/gallerysc.jpg',
+              className: 'imagegal'
           },
-          getgovgrants: {
+          colorListTool: {
               title: 'Colour List Tool',
               url: '#',
               description: 'A React & Firebase tool to pick and save colour palettes.',
-              screengrab: 'https://www.fillmurray.com/700/240'
+              screengrab: './images/colorlisttool.png',
+              className: 'colorlist WIP'
+          },
+          juniorDays: {
+              title: 'Junior Days',
+              url: '#',
+              description: 'Blog using Vue, Vuex and Firebase.',
+              screengrab: './images/juniordayssnip.png',
+              className: 'juniordays'
+          },
+          baseonfire: {
+              title: 'BASEONFIRE',
+              url: '#',
+              description: 'An Electron and Vue based tool to update Firebase DBs.',
+              screengrab: './images/bloggersnip.png',
+              className: 'baseon WIP'
           }
       },
       colours: [

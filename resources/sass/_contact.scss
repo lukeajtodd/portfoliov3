@@ -13,7 +13,7 @@
     background: #ddd;
     border: 3px solid #000;
     height: 20rem;
-    max-width: 29rem;
+    max-width: 49%;
     width: 100%;
     margin-top: $margin;
     float: left;
@@ -62,7 +62,7 @@
   @media screen and (max-width: 1070px) {
     .details__container, .message__container {
       float: none;
-      max-width: $main_width;
+      max-width: 100%;
       width: 100%;
       margin-left: 0;
     }
@@ -70,6 +70,14 @@
     .message {
       text-align: center;
       width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .contact {
+    .details a {
+      font-size: 1.6rem;
     }
   }
 }

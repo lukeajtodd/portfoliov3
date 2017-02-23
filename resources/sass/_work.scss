@@ -12,7 +12,8 @@
 .work {
   background: #ddd;
   border: 3px solid black;
-  max-width: 29rem;
+  color: #fff;
+  max-width: 49%;
   width: 100%;
   height: $main_height;
   padding: $padding;
@@ -26,7 +27,7 @@
     height: 100%;
   }
 
-  &:first-child {
+  &:nth-child(odd) {
     margin-left: 0;
   }
 
@@ -63,9 +64,51 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%;
     display: inline-block;
-    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .WIP {
+    &:after {
+      content: "WIP";
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 0.2rem 1rem;
+      background: black;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 100;
+    }
+  }
+
+  .imagegal {
+    background-image: url(/images/gallerysc.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 1%;
+  }
+
+  .colorlist {
+    background-image: url(/images/colorlisttool.png);
+    background-repeat: no-repeat;
+    background-size: 210%;
+    background-position: 1%;
+  }
+
+  .juniordays {
+    background-image: url(/images/juniordayssnip.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: 10%;
+  }
+
+  .baseon {
+    background-image: url(/images/bloggersnip.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100% 5%;
   }
 
   @media screen and (max-width: 800px) {
@@ -73,7 +116,7 @@
       display: block;
     }
     &__image {
-      width: 400%;
+      width: 100%;
     }
   }
 }
@@ -84,5 +127,15 @@
     max-width: $main_width;
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .work {
+    padding: 2.5rem;
+    &__description {
+      width: 100%;
+      
+    }
   }
 }
