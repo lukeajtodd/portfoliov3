@@ -12,6 +12,7 @@ head
     
     link(rel="icon", href="/favicon.ico?v=2")
     link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src='/javascripts/scripts.js')
 body
     .container
         block content
@@ -20,6 +21,16 @@ body
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        (function() {
+            var scrollLink = document.querySelector('.quick-link');
+
+            scrollLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.getElementById('contact');
+                scrollTo(document.body, target.offsetTop + 20, 400);
+            });
+        })(window, document);
 
         ga('create', 'UA-74175693-2', 'auto');
         ga('send', 'pageview');

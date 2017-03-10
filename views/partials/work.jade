@@ -1,7 +1,8 @@
 .work__container
     - for item in work
-      .work
-        .overlay
-        h2.work__title= item.title
-        p.work__description= item.description
-        div.work__image(class="#{item.className}") 
+        .work
+          a(href="#{item.url}")
+            .overlay
+            h2.work__title= item.title
+            p.work__description= item.description
+            div.work__image(class="#{item.className}") 

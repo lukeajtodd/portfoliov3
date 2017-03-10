@@ -198,6 +198,8 @@
   width: 100%;
   max-width: calc(58rem + 15px);
   margin: 60px auto; }
+  .work__container a {
+    color: #fff; }
   .work__container:after {
     content: "";
     display: table;
@@ -395,4 +397,5 @@ body {
     color: #fff; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: initial; }

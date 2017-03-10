@@ -2,6 +2,9 @@
   width: 100%;
   max-width: $main_width;
   margin: 60px auto;
+  a {
+    color: #fff;
+  }
   &:after {
     content: "";
     display: table;

@@ -7,28 +7,28 @@ router.get('/', function(req, res, next) {
       work: {
           preactImageGallery: {
               title: 'Preact Image Gallery',
-              url: '#',
+              url: 'https://www.ltimagery.co.uk',
               description: 'Photo gallery using Preact, the Imgur API and some lazy loading.',
               screengrab: '/images/gallerysc.jpg',
               className: 'imagegal'
           },
           colorListTool: {
               title: 'Colour List Tool',
-              url: '#',
+              url: '',
               description: 'A React & Firebase tool to pick and save colour palettes.',
               screengrab: './images/colorlisttool.png',
               className: 'colorlist WIP'
           },
           juniorDays: {
               title: 'Junior Days',
-              url: '#',
+              url: 'https://www.juniordays.co.uk',
               description: 'Blog using Vue, Vuex and Firebase.',
               screengrab: './images/juniordayssnip.png',
               className: 'juniordays'
           },
           baseonfire: {
               title: 'BASEONFIRE',
-              url: '#',
+              url: '',
               description: 'An Electron and Vue based tool to update Firebase DBs.',
               screengrab: './images/bloggersnip.png',
               className: 'baseon WIP'
